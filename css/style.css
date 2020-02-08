@@ -1,0 +1,24 @@
+.custom-icon span {
+  color: red;
+}
+
+.custom-icon {
+  float: left;
+}
+.custom-nadpis h1 {
+  text-align: center;
+}
+.custom-backcolor-seda {
+  background-color: #c9c9c9;
+}
+.custom-button-mamzajem {
+  color: red;
+  border: red;
+}
+.custom-pozadi-transparent {
+  background-color: #0000000;
+}
+/*custom-img {
+  height: 450px;
+}
+*/
