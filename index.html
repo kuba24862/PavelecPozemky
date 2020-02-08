@@ -76,7 +76,40 @@
         </div>
         <div>
           <div class="uk-card uk-card-default uk-card-body">
-            <img class="custom-img" src="images/cenik.jpg" alt="" />
+            <div class="uk-inline uk-dark">
+              <img class="custom-img" src="images/cenik.jpg" alt="" />
+              <a
+                class="uk-position-absolute uk-transform-center"
+                style="left: 47%; top: 40%"
+                href="#Pozemek-1-detail"
+                uk-toggle
+                uk-marker
+              ></a>
+              <a
+                class="uk-position-absolute uk-transform-center"
+                style="left: 37%; top: 40%"
+                href="#"
+                uk-marker
+              ></a>
+              <a
+                class="uk-position-absolute uk-transform-center"
+                style="left: 80%; top: 70%"
+                href="#"
+                uk-marker
+              ></a>
+            </div>
+            <!-- This is the modal -->
+            <div id="Pozemek-1-detail" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                <h2 class="uk-modal-title">Pozemek 26/111</h2>
+                <p>
+                  1 191 m2
+                </p>
+                <p class="uk-text-danger">
+                  Prodáno
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
