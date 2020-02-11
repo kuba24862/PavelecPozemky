@@ -26,3 +26,17 @@
 .custom-button-prodano {
   background-color: red;
 }
+@media (max-width:640px){
+  #menu{
+    display: block;
+  }
+  #menu li a {
+    height: 10px;
+  }
+  .menu{
+    display: block!important;
+  }
+  .custom-nav-tlacitko{
+    margin-bottom: 0;
+  }
+}
