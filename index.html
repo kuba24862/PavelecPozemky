@@ -1,248 +1,195 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pozemky chuchelna - prodej</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="css/uikit.min.css" />
 
-    <!-- custom css; perfix custom -->
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <title>Pozemky chuchelna - prodej</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="css/uikit.min.css" />
 
-    <!-- UIkit JS-->
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-  </head>
-  <body>
-    <div
-      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
-    >
-      <!-- navbar-->
-      <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <div class="uk-container">
-          <div class="uk-navbar-right uk-visible@s">
-            <a class="uk-navbar-item uk-logo" href="#">Logo</a>
-            <ul class="uk-navbar-nav">
-              <li><a href="">Domů</a></li>
-              <li><a href="">Pozemky</a></li>
-              <li><a href="">Ceník</a></li>
-              <li><a href="">Fotogalerie</a></li>
-              <li><a href="">Lokalita</a></li>
-              <li><a href="">Kontakt</a></li>
-            </ul>
-          </div>
+  <!-- custom css; perfix custom -->
+  <link rel="stylesheet" href="css/style.css" />
 
-         
-      </nav>
-    </div>
-    
-    <nav>
-      <div class="uk-navbar-container uk-navbar-center uk-hidden@m" uk-navbar>
-        <div class="">
-            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href=""></a>
+  <!-- UIkit JS-->
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <!-- navbar-->
+
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+
+      <div class="uk-container">
+
+        <div class="uk-navbar-right menu ">
+          <button class=" uk-align-center uk-button uk-button-default uk-hidden@s  custom-nav-tlacitko" type="button"
+            uk-toggle="target: #menu; animation: uk-animation-slide-top, uk-animation-slide-bottom; cls: menu">LOGO
+            <span uk-icon="icon: menu;ratio: 2"></span></button>
+          <a class="uk-navbar-item uk-logo uk-visible@s" href="#">Logo</a>
+
+          <ul id="menu" class="uk-visible@s uk-navbar-nav">
+            <li><a href="">Domů</a></li>
+            <li><a href="">Pozemky</a></li>
+            <li><a href="">Ceník</a></li>
+            <li><a href="">Fotogalerie</a></li>
+            <li><a href="">Lokalita</a></li>
+            <li><a href="">Kontakt</a></li>
+          </ul>
+
         </div>
       </div>
+
+
     </nav>
-   
+  </div>
 
 
 
 
 
 
-
-
-    <div class="uk-container uk-container-large">
-      <!--// tex v navbaru-->
-      <div
-        class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-        data-src="images/pozemky-chuchelna-slider.jpg"
-        uk-img
-      >
-        <h1>Nabízíme k prodeji pozemky</h1>
-      </div>
+  <div class="uk-container uk-container-large">
+    <!--// tex v navbaru-->
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+      data-src="images/pozemky-chuchelna-slider.jpg" uk-img>
+      <h1>Nabízíme k prodeji pozemky</h1>
     </div>
-    <div
-      class="uk-container uk-padding uk-padding-remove-right uk-padding-remove-left uk-container-large"
-    >
-      <h3>Dokážete si představit svůj život v malebné obci Chuchelná?</h3>
-      <p>
-        Vítejte v obci Chuchelná, která se nachází v Moravskoslezském kraji, v
-        severní příhraniční části regionu Hlučínsko a čítá asi 1300 obyvatel.
-        Chuchelná je obec nacházející se 10 km jihozápadně od města Kravaře, 12
-        km jižně od Hlučína, 16 km jihozápadně od statutárního města Opava a
-        30km od Krajského města Ostrava. V obci je veškerá občanská vybavenost
-        včetně základní školy s tělocvičnou, mateřské školy, fotbalového hřiště.
-        Jsou zde také praktičtí lékaři, odborní lékaři a rehabilitační ústav.
-        Chuchelná nabízí velmi klidné bydlení s dostupností do okolních měst,
-        kde si přijde na své opravdu každý. Hluboké lesy, obklopující tuto
-        krásnou obec vybízejí nejen k pěší turistice, ale také k cykloturistice
-        v rámci cyklostezek regionu. Možnost spojení se sousedním Polskem dávají
-        dva hraniční přechody, a to Chuchelná – Krzanowice a Chuchelná –
-        Borzuczin. K pozemkům jsou přivedeny inženýrské sítě (voda, plyn a
-        elektrická síť) a jsou napojeny na ČOV obce Chuchelná.
-      </p>
-    </div>
-    <div class="uk-container uk-container-large">
-      <!-- pozemky - mapa -->
-      <div
-        class="uk-grid-medium uk-child-width-expand@s uk-text-center uk-flex uk-flex-middle"
-        uk-grid
-      >
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            <h3>
-              Cena 1 240 Kč /m2 Odhadce a financování vám rádi zdarma zajistíme.
-            </h3>
-            <button
-              class="uk-button uk-button-default uk-button-large uk-width-1-1 custom-button-mamzajem"
-            >
-              Mám zájem!
-            </button>
-          </div>
+  </div>
+  <div class="uk-container uk-padding uk-padding-remove-right uk-padding-remove-left uk-container-large">
+    <h3>Dokážete si představit svůj život v malebné obci Chuchelná?</h3>
+    <p>
+      Vítejte v obci Chuchelná, která se nachází v Moravskoslezském kraji, v
+      severní příhraniční části regionu Hlučínsko a čítá asi 1300 obyvatel.
+      Chuchelná je obec nacházející se 10 km jihozápadně od města Kravaře, 12
+      km jižně od Hlučína, 16 km jihozápadně od statutárního města Opava a
+      30km od Krajského města Ostrava. V obci je veškerá občanská vybavenost
+      včetně základní školy s tělocvičnou, mateřské školy, fotbalového hřiště.
+      Jsou zde také praktičtí lékaři, odborní lékaři a rehabilitační ústav.
+      Chuchelná nabízí velmi klidné bydlení s dostupností do okolních měst,
+      kde si přijde na své opravdu každý. Hluboké lesy, obklopující tuto
+      krásnou obec vybízejí nejen k pěší turistice, ale také k cykloturistice
+      v rámci cyklostezek regionu. Možnost spojení se sousedním Polskem dávají
+      dva hraniční přechody, a to Chuchelná – Krzanowice a Chuchelná –
+      Borzuczin. K pozemkům jsou přivedeny inženýrské sítě (voda, plyn a
+      elektrická síť) a jsou napojeny na ČOV obce Chuchelná.
+    </p>
+  </div>
+  <div class="uk-container uk-container-large">
+    <!-- pozemky - mapa -->
+    <div class="uk-grid-medium uk-child-width-expand@s uk-text-center uk-flex uk-flex-middle" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body">
+          <h3>
+            Cena 1 240 Kč /m2 Odhadce a financování vám rádi zdarma zajistíme.
+          </h3>
+          <button class="uk-button uk-button-default uk-button-large uk-width-1-1 custom-button-mamzajem">
+            Mám zájem!
+          </button>
         </div>
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            <div class="uk-inline uk-dark">
-              <img class="custom-img" src="images/cenik.jpg" alt="" />
-              <!--Takové ty pluska co jsou na tom obrázku-->
-              <a
-                class="uk-position-absolute uk-transform-center custom-button-prodano"
-                style="left: 47%; top: 40%"
-                href="#Pozemek-1-detail"
-                uk-toggle
-                uk-marker
-              ></a>
-              <a
-                class="uk-position-absolute uk-transform-center"
-                style="left: 37%; top: 40%"
-                href="#"
-                uk-marker
-              ></a>
-              <a
-                class="uk-position-absolute uk-transform-center"
-                style="left: 80%; top: 70%"
-                href="#"
-                uk-marker
-              ></a>
-            </div>
-            <!-- This is the modal, detail pluska -->
-            <div id="Pozemek-1-detail" uk-modal>
-              <div class="uk-modal-dialog uk-modal-body uk-text-center">
-                <h2 class="uk-modal-title">Pozemek 26/111</h2>
-                <p>
-                  1 191 m2
-                </p>
-                <p class="uk-text-danger">
-                  Prodáno
-                </p>
-              </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body">
+          <div class="uk-inline uk-dark">
+            <img class="custom-img" src="images/cenik.jpg" alt="" />
+            <!--Takové ty pluska co jsou na tom obrázku-->
+            <a class="uk-position-absolute uk-transform-center custom-button-prodano" style="left: 47%; top: 40%"
+              href="#Pozemek-1-detail" uk-toggle uk-marker></a>
+            <a class="uk-position-absolute uk-transform-center" style="left: 37%; top: 40%" href="#" uk-marker></a>
+            <a class="uk-position-absolute uk-transform-center" style="left: 80%; top: 70%" href="#" uk-marker></a>
+          </div>
+          <!-- This is the modal, detail pluska -->
+          <div id="Pozemek-1-detail" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-text-center">
+              <h2 class="uk-modal-title">Pozemek 26/111</h2>
+              <p>
+                1 191 m2
+              </p>
+              <p class="uk-text-danger">
+                Prodáno
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="uk-container uk-padding-large">
-      <!-- icony + jejich popisky -->
-      <div
-        class="uk-grid-medium uk-child-width-expand@s uk-text-center"
-        uk-grid
-      >
-        <div class="uk-child-width-1-3 custom-icon">
-          <span uk-icon="icon: home; ratio:3"></span>
+  <div class="uk-container uk-padding-large">
+    <!-- icony + jejich popisky -->
+    <div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid>
+      <div class="uk-child-width-1-3 custom-icon">
+        <span uk-icon="icon: home; ratio:3"></span>
 
-          Občanská vybavenost v obci
-        </div>
-        <div class="uk-child-width-1-3 custom-icon">
-          <span uk-icon="icon: settings; ratio:3"></span>
+        Občanská vybavenost v obci
+      </div>
+      <div class="uk-child-width-1-3 custom-icon">
+        <span uk-icon="icon: settings; ratio:3"></span>
 
-          Občanská vybavenost v obci
-        </div>
-        <div class="uk-child-width-1-3 custom-icon">
-          <span uk-icon="icon: star; ratio:3"></span>
+        Občanská vybavenost v obci
+      </div>
+      <div class="uk-child-width-1-3 custom-icon">
+        <span uk-icon="icon: star; ratio:3"></span>
 
-          Občanská vybavenost v obci
-        </div>
+        Občanská vybavenost v obci
       </div>
     </div>
+  </div>
 
-    <div class="uk-container">
-      <div
-        class="uk-grid-medium uk-child-width-expand@s uk-text-center"
-        uk-grid
-      >
-        <!--začátek obrázku-->
-        <a href="#obrz1" uk-toggle>
-          <div class=" custom-icon">
-            <img src="images/pozemky-chuchelna.jpg"  />
-          </div>
-        </a>
-        <div id="obrz1" class="uk-flex-top" uk-modal>
-          <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-            <button
-              class="uk-modal-close-outside"
-              type="button"
-              uk-close
-            ></button>
-            <img src="images/pozemky-chuchelna.jpg" />
-          </div>
+  <div class="uk-container">
+    <div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid>
+      <!--začátek obrázku-->
+      <a href="#obrz1" uk-toggle>
+        <div class=" custom-icon">
+          <img src="images/pozemky-chuchelna.jpg" />
         </div>
-        <!--konce obrázku-->
-        <!--začátek obrázku-->
-        <a href="#obrz2" uk-toggle>
-          <div class=" custom-icon">
-            <img src="images/pozemky-chuchelna-01.jpg"  />
-          </div>
-        </a>
+      </a>
+      <div id="obrz1" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+          <button class="uk-modal-close-outside" type="button" uk-close></button>
+          <img src="images/pozemky-chuchelna.jpg" />
+        </div>
+      </div>
+      <!--konce obrázku-->
+      <!--začátek obrázku-->
+      <a href="#obrz2" uk-toggle>
+        <div class=" custom-icon">
+          <img src="images/pozemky-chuchelna-01.jpg" />
+        </div>
+      </a>
 
-        <div id="obrz2" class="uk-flex-top" uk-modal>
-          <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-            <button
-              class="uk-modal-close-outside"
-              type="button"
-              uk-close
-            ></button>
-            <img src="images/pozemky-chuchelna-01.jpg" />
-          </div>
+      <div id="obrz2" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+          <button class="uk-modal-close-outside" type="button" uk-close></button>
+          <img src="images/pozemky-chuchelna-01.jpg" />
         </div>
-        <!--konce obrázku-->
-        <!--začátek obrázku-->
-        <a href="#obrz3" uk-toggle>
-          <div class="custom-icon">
-            <img src="images/pozemky-chuchelna.jpg"  />
-          </div>
-        </a>
-        <div id="obrz3" class="uk-flex-top" uk-modal>
-          <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-            <button
-              class="uk-modal-close-outside"
-              type="button"
-              uk-close
-            ></button>
-            <img src="images/pozemky-chuchelna.jpg" />
-          </div>
+      </div>
+      <!--konce obrázku-->
+      <!--začátek obrázku-->
+      <a href="#obrz3" uk-toggle>
+        <div class="custom-icon">
+          <img src="images/pozemky-chuchelna.jpg" />
         </div>
-        <!--konce obrázku-->
+      </a>
+      <div id="obrz3" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+          <button class="uk-modal-close-outside" type="button" uk-close></button>
+          <img src="images/pozemky-chuchelna.jpg" />
+        </div>
+      </div>
+      <!--konce obrázku-->
     </div>
 
     <div class="uk-container uk-container-large uk-padding ">
       <!-- google mapa -->
-      <iframe
-        class="uk-width-1-1"
-        style="height: 600px;"
+      <iframe class="uk-width-1-1" style="height: 600px;"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1535.4364074382877!2d18.355018037163525!3d49.667752237114804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1scs!2scz!4v1581173100194!5m2!1scs!2scz"
-        frameborder="0"
-        style="border:0;"
-        allowfullscreen=""
-      ></iframe>
+        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
     <div class="uk-container uk-container-large">
-      <div
-        class="uk-child-width-expand@s uk-text-center uk-padding-large uk-padding-remove-horizontal"
-        uk-grid
-      >
+      <div class="uk-child-width-expand@s uk-text-center uk-padding-large uk-padding-remove-horizontal" uk-grid>
         <div>
           <div class="uk-card uk-card-secondary uk-card-body">
             <h3 class="uk-card-title">Kontakty</h3>
@@ -251,5 +198,6 @@
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
