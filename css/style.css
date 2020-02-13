@@ -47,3 +47,6 @@
 .uk-lightbox{
   background-color: #00000090;
 }
+#menu li.uk-active a{
+  text-decoration: overline;
+}
